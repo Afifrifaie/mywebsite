@@ -36,6 +36,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# netlify
+.netlify
+
+# local design references
+/reference
+
+# editor / claude
+/.claude
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
