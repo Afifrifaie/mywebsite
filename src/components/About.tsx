@@ -24,7 +24,7 @@ export default function About() {
           </div>
           <p className="mt-6 text-sm text-muted">
             I love turning ideas into production-ready interfaces that feel fast,
-            considered, and actually useful.
+            intentional, and useful.
           </p>
         </article>
 
