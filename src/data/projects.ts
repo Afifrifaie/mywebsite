@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "Trainer Tracking App",
     description:
       "Helps personal trainers log client progress and automatically email status reports back to their clients.",
-    image: "/about/trainer-tracker.png",
+    image: "/projects/trainer.png",
     stack: ["React", "TypeScript", "Tailwind", "Lucide", "Resend"],
     liveUrl: "",
     repoUrl: "https://github.com/Afifrifaie",
