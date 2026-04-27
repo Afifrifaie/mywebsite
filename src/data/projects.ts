@@ -14,7 +14,7 @@ export const projects: Project[] = [
       "A fast-paced dice game where you lock in matching numbers to win — built as a React state-management exercise.",
     image: "/projects/tenzies.png",
     stack: ["HTML", "CSS", "React"],
-    liveUrl: "",
+    liveUrl: "https://tenzies-afif.netlify.app/",
     repoUrl: "https://github.com/Afifrifaie",
   },
   {
@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "A word-guessing game with a programming-language twist — guess letters before the language goes extinct.",
     image: "/projects/hangman.png",
     stack: ["HTML", "CSS", "React"],
-    liveUrl: "",
+    liveUrl: "https://hangman-afif.netlify.app/",
     repoUrl: "https://github.com/Afifrifaie",
   },
   {
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "A shopping experience with cart, product browsing, and checkout flow, powered by the DummyJSON API.",
     image: "/projects/ecommerce.png",
     stack: ["HTML", "CSS", "React"],
-    liveUrl: "",
+    liveUrl: "https://leshop-afif.netlify.app/",
     repoUrl: "https://github.com/Afifrifaie",
   },
   {

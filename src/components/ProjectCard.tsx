@@ -39,6 +39,17 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
       onMouseMove={handleMouseMove}
       className={`glow-card group relative flex h-full ${sizeClass} flex-col overflow-hidden rounded-2xl border border-border bg-surface`}
     >
+      {/* Whole-card clickable overlay (live URL takes precedence, then repo) */}
+      {(project.liveUrl || project.repoUrl) && (
+        <a
+          href={project.liveUrl || project.repoUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Open ${project.title}`}
+          className="absolute inset-0 z-20"
+        />
+      )}
+
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-2">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -57,7 +68,7 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-2 flex items-start justify-between gap-3">
           <h3 className="font-display text-lg font-medium">{project.title}</h3>
-          <div className="flex items-center gap-1.5 opacity-0 transition-opacity group-hover:opacity-100">
+          <div className="relative z-30 flex items-center gap-1.5 opacity-0 transition-opacity group-hover:opacity-100">
             {project.repoUrl && (
               <a
                 href={project.repoUrl}
