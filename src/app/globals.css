@@ -114,6 +114,50 @@ body {
   box-shadow: 0 10px 40px -10px rgba(17, 138, 178, 0.25);
 }
 
+/* Arcade neon effects */
+.arcade-font {
+  font-family: var(--font-pixel), monospace;
+}
+
+.neon-yellow {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700, 0 0 20px #ffd700, 0 0 40px #ffaa00;
+}
+
+.neon-cyan {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff, 0 0 20px #00e5ff;
+}
+
+.neon-pink {
+  color: #ff2d78;
+  text-shadow: 0 0 8px #ff2d78, 0 0 20px #ff2d78;
+}
+
+.neon-box-yellow {
+  box-shadow: 0 0 8px #ffd700, 0 0 20px #ffd70066, inset 0 0 8px #ffd70033;
+}
+
+.neon-box-pink {
+  box-shadow: 0 0 8px #ff2d78, 0 0 20px #ff2d7866, inset 0 0 8px #ff2d7833;
+}
+
+.neon-box-cyan {
+  box-shadow: 0 0 8px #00e5ff, 0 0 20px #00e5ff66, inset 0 0 8px #00e5ff33;
+}
+
+@keyframes flicker {
+  0%, 95%, 100% { opacity: 1; }
+  96% { opacity: 0.8; }
+  97% { opacity: 1; }
+  98% { opacity: 0.6; }
+  99% { opacity: 1; }
+}
+
+.arcade-flicker {
+  animation: flicker 6s infinite;
+}
+
 /* Hide scrollbar */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

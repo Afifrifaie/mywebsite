@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Inter, Fraunces, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,6 +10,13 @@ const inter = Inter({
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const pressStart2P = Press_Start_2P({
+  variable: "--font-pixel",
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${inter.variable} ${fraunces.variable} ${pressStart2P.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
