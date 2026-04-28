@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const ROLES = ["Front End Developer", "AI Web Developer"];
+const ROLES = ["Front End Developer", "Web Developer"];
 
 const TYPE_SPEED = 75;
 const DELETE_SPEED = 40;
