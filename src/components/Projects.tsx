@@ -15,7 +15,7 @@ export default function Projects() {
           A small selection of <span className="italic text-accent">recent work</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-muted">
-          Hover to pause. Each card lights up the closer you get.
+          View my carousel of my projects. Hover over project to pause.
         </p>
       </div>
 
