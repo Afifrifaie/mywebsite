@@ -5,6 +5,7 @@ import {
   Database,
   Bot,
   Palette,
+  Cloud,
 } from "lucide-react";
 
 type Skill = { name: string };
@@ -53,6 +54,17 @@ const categories: Category[] = [
     hoverBg: "var(--warm-3)",
     skills: [{ name: "Figma" }, { name: "Lucide React" }],
   },
+  {
+    title: "AWS",
+    description: "Serverless plumbing for real apps.",
+    icon: Cloud,
+    hoverBg: "var(--warm-1)",
+    skills: [
+      { name: "Lambda" },
+      { name: "SES" },
+      { name: "API Gateway" },
+    ],
+  },
 ];
 
 export default function Skills() {
@@ -67,7 +79,7 @@ export default function Skills() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {categories.map((cat) => {
           const Icon = cat.icon;
           return (
