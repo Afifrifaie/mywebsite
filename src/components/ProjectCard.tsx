@@ -15,6 +15,7 @@ const STACK_COLORS: Record<string, string> = {
   Supabase: "#3ecf8e",
   Lucide: "#118ab2",
   Resend: "#000000",
+  AWS: "#ff9900",
 };
 
 type Props = {

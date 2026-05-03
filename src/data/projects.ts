@@ -44,4 +44,13 @@ export const projects: Project[] = [
     liveUrl: "",
     repoUrl: "https://github.com/Afifrifaie",
   },
+  {
+    title: "Asset Health Monitor",
+    description:
+      "A real-time dashboard for tracking the health and status of physical assets, with AWS-powered telemetry.",
+    image: "/projects/asset-health.png",
+    stack: ["React", "TypeScript", "Tailwind", "AWS"],
+    liveUrl: "https://assethealth.netlify.app/",
+    repoUrl: "https://github.com/Afifrifaie",
+  },
 ];
