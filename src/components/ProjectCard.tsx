@@ -56,7 +56,7 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
         <img
           src={project.image}
           alt={project.title}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          className="h-full w-full object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = "none";
           }}
