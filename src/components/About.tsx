@@ -36,7 +36,7 @@ export default function About() {
             What I reach for when shipping production work.
           </p>
           <div className="flex flex-wrap gap-2">
-            {["Next.js", "React", "TypeScript", "Tailwind", "Supabase"].map((t) => (
+            {["Next.js", "React", "TypeScript", "Tailwind", "Supabase", "AWS", "Figma", "UI/UX"].map((t) => (
               <span
                 key={t}
                 className="rounded-full border border-border bg-surface-2 px-3 py-1 text-xs font-medium text-foreground"
