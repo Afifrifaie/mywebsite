@@ -33,7 +33,7 @@ export default function About() {
           <Wrench className="mb-4 h-6 w-6 text-accent" strokeWidth={1.5} />
           <h3 className="mb-1 font-display text-lg font-medium">My core stack</h3>
           <p className="mb-4 text-sm text-muted">
-            Always learning, always sharpening the toolkit.
+            Always learning, always refining the craft.
           </p>
           <div className="flex flex-wrap gap-2">
             {["Next.js", "React", "TypeScript", "Tailwind", "Supabase", "AWS", "Figma", "UI/UX"].map((t) => (
