@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     title: "Math Arcade",
     description:
-      "A playful, gamified math practice app with progress saved to Firebase — built to make drilling fundamentals feel like a game.",
+      "A web app that helps teachers manage and track the award stamps they give students — searchable and filterable by class and primary level.",
     image: "/projects/math-arcade.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "Firebase"],
     liveUrl: "",
