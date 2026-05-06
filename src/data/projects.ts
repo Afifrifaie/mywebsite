@@ -53,4 +53,13 @@ export const projects: Project[] = [
     liveUrl: "https://assethealth.netlify.app/",
     repoUrl: "https://github.com/Afifrifaie",
   },
+  {
+    title: "Math Arcade",
+    description:
+      "A playful, gamified math practice app with progress saved to Firebase — built to make drilling fundamentals feel like a game.",
+    image: "/projects/math-arcade.png",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind", "Firebase"],
+    liveUrl: "",
+    repoUrl: "https://github.com/Afifrifaie",
+  },
 ];
