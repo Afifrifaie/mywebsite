@@ -18,8 +18,8 @@ export default function About() {
           <div>
             <Sparkles className="mb-5 h-8 w-8 text-accent" strokeWidth={1.5} />
             <h3 className="font-display text-2xl font-medium leading-snug">
-              I build polished, modern web apps —
-              <span className="text-muted"> with a thoughtful mix of design sense and AI-driven workflows.</span>
+              I combine development and design
+              <span className="text-muted"> to build clean, user-friendly websites that stand out.</span>
             </h3>
           </div>
           <p className="mt-6 text-sm text-muted">
