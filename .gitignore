@@ -45,6 +45,9 @@ yarn-error.log*
 # editor / claude
 /.claude
 
+# private job-application drafts (resume, cover letter, outreach)
+/application-materials
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

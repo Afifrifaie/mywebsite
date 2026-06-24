@@ -23,7 +23,8 @@ export default function Hero() {
       </h1>
 
       <p className="mx-auto mt-6 max-w-xl text-balance text-base text-muted sm:text-lg">
-        I care about making useful things that people genuinely love.
+        I build fast, polished websites people love to use &mdash; and that turn
+        visitors into customers.
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">

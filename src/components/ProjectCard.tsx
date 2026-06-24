@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { ExternalLink, ArrowRight } from "lucide-react";
 import { GithubIcon } from "./icons";
 import type { Project } from "@/data/projects";
 
@@ -13,6 +14,8 @@ const STACK_COLORS: Record<string, string> = {
   JavaScript: "#f7df1e",
   Tailwind: "#38bdf8",
   Supabase: "#3ecf8e",
+  Sanity: "#f03e2f",
+  Firebase: "#ffca28",
   Lucide: "#118ab2",
   Resend: "#000000",
   AWS: "#ff9900",
@@ -40,18 +43,33 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
       onMouseMove={handleMouseMove}
       className={`glow-card group relative flex h-full ${sizeClass} flex-col overflow-hidden rounded-2xl border border-border bg-surface`}
     >
-      {/* Whole-card clickable overlay (live URL takes precedence, then repo) */}
-      {(project.liveUrl || project.repoUrl) && (
-        <a
-          href={project.liveUrl || project.repoUrl}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={`Open ${project.title}`}
+      {/* Whole-card clickable overlay.
+          A case study (slug) takes precedence and opens internally;
+          otherwise fall back to the live URL, then the repo. */}
+      {project.slug ? (
+        <Link
+          href={`/work/${project.slug}`}
+          aria-label={`Read the ${project.title} case study`}
           className="absolute inset-0 z-20"
         />
+      ) : (
+        (project.liveUrl || project.repoUrl) && (
+          <a
+            href={project.liveUrl || project.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${project.title}`}
+            className="absolute inset-0 z-20"
+          />
+        )
       )}
 
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-2">
+        {project.featured && (
+          <span className="absolute left-3 top-3 z-30 rounded-full border border-border bg-surface/90 px-2.5 py-1 text-[11px] font-medium text-accent backdrop-blur-sm">
+            Featured
+          </span>
+        )}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={project.image}
@@ -113,6 +131,13 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
             </span>
           ))}
         </div>
+
+        {project.slug && (
+          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+            Read case study
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </span>
+        )}
       </div>
     </article>
   );

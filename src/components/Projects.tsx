@@ -15,7 +15,8 @@ export default function Projects() {
           A small selection of <span className="italic text-accent">recent work</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-muted">
-          View my carousel of my projects. Hover over project to pause.
+          Real, client-style builds first &mdash; hover to pause, and open one for the
+          full case study.
         </p>
       </div>
 
