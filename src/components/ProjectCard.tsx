@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { GithubIcon } from "./icons";
 import type { Project } from "@/data/projects";
@@ -70,11 +71,12 @@ export default function ProjectCard({ project, variant = "fluid" }: Props) {
             Featured
           </span>
         )}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={project.image}
           alt={project.title}
-          className="h-full w-full object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
+          fill
+          sizes="(max-width: 640px) 100vw, 380px"
+          className="object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = "none";
           }}
