@@ -1,5 +1,7 @@
 export type CaseStudyImage = {
   src: string;
+  width: number;
+  height: number;
   caption?: string;
 };
 
@@ -34,7 +36,6 @@ export const projects: Project[] = [
     image: "/projects/nafiis.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "Sanity"],
     liveUrl: "https://sfm-nafiis.vercel.app/",
-    repoUrl: "https://github.com/Afifrifaie",
     slug: "nafiis",
     featured: true,
     client: "Self-initiated spec build",
@@ -67,15 +68,21 @@ export const projects: Project[] = [
     gallery: [
       {
         src: "/projects/nafiis-home.png",
+        width: 1920,
+        height: 9427,
         caption: "The full landing page — hero, approach, programs, results, and FAQ.",
       },
       {
         src: "/projects/nafiis-studio.png",
+        width: 1897,
+        height: 863,
         caption:
           "The Sanity Studio: the owner edits every section here, with a draft → publish workflow.",
       },
       {
         src: "/projects/nafiis.png",
+        width: 1200,
+        height: 630,
         caption: "Designed Open Graph card for rich social sharing.",
       },
     ],
@@ -114,6 +121,8 @@ export const projects: Project[] = [
     gallery: [
       {
         src: "/projects/math-arcade.png",
+        width: 875,
+        height: 742,
         caption: "The teacher dashboard — searchable, filterable stamp tracking.",
       },
     ],
@@ -152,6 +161,8 @@ export const projects: Project[] = [
     gallery: [
       {
         src: "/projects/trainer.png",
+        width: 1920,
+        height: 1107,
         caption: "The trainer's client-progress logging view.",
       },
     ],

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import {
@@ -140,11 +141,14 @@ export default async function CaseStudyPage({
         {/* Lead image */}
         {project.gallery && project.gallery[0] && (
           <figure className="mt-12 overflow-hidden rounded-2xl border border-border bg-surface-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={project.gallery[0].src}
               alt={project.gallery[0].caption ?? project.title}
-              className="w-full"
+              width={project.gallery[0].width}
+              height={project.gallery[0].height}
+              sizes="(max-width: 896px) 100vw, 832px"
+              className="h-auto w-full"
+              priority
             />
             {project.gallery[0].caption && (
               <figcaption className="border-t border-border px-5 py-3 text-sm text-muted">
@@ -205,8 +209,14 @@ export default async function CaseStudyPage({
                 key={img.src}
                 className="overflow-hidden rounded-2xl border border-border bg-surface-2"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.caption ?? project.title} className="w-full" />
+                <Image
+                  src={img.src}
+                  alt={img.caption ?? project.title}
+                  width={img.width}
+                  height={img.height}
+                  sizes="(max-width: 896px) 100vw, 832px"
+                  className="h-auto w-full"
+                />
                 {img.caption && (
                   <figcaption className="border-t border-border px-5 py-3 text-sm text-muted">
                     {img.caption}
