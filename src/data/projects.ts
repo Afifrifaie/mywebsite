@@ -32,7 +32,7 @@ export const projects: Project[] = [
   {
     title: "Nafiis Syukri: Strength & Mobility Coaching",
     description:
-      "A coaching website designed to turn Instagram followers into booked clients, with the owner able to edit every word, photo, and price themselves, without a developer. Built with SEO in mind so it can be found on Google.",
+      "A coaching website designed to turn Instagram followers into booked clients, with the owner able to edit every word, photo, and price themselves without a developer.",
     image: "/projects/nafiis.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "Sanity"],
     liveUrl: "https://sfm-nafiis.vercel.app/",
