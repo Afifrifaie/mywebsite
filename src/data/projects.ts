@@ -13,7 +13,7 @@ export type Project = {
   liveUrl?: string;
   repoUrl?: string;
 
-  // Case study (optional — only the strongest projects have one)
+  // Case study (optional, only the strongest projects have one)
   slug?: string;
   featured?: boolean;
   client?: string;
@@ -30,9 +30,9 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Nafiis Syukri — Strength & Mobility Coaching",
+    title: "Nafiis Syukri: Strength & Mobility Coaching",
     description:
-      "A coaching website that turns Instagram followers into booked clients — and lets the owner edit every word, photo, and price themselves, without a developer. Built to rank on Google from day one.",
+      "A coaching website designed to turn Instagram followers into booked clients, with the owner able to edit every word, photo, and price themselves, without a developer. Built with SEO in mind so it can be found on Google.",
     image: "/projects/nafiis.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "Sanity"],
     liveUrl: "https://sfm-nafiis.vercel.app/",
@@ -42,23 +42,23 @@ export const projects: Project[] = [
     year: "2026",
     role: "Design & full-stack development",
     tagline:
-      "The kind of site a web agency charges thousands for — custom-designed, easy to run yourself, and built to bring in enquiries. I built it end to end as a demonstration of what I deliver.",
+      "A custom-designed coaching site that's easy to run yourself and built to bring in enquiries. I built it end to end as a self-directed project, to practise the kind of work I'd love to do for clients.",
     problem:
-      "Nafiis is a strength & mobility coach with a growing Instagram following — but no website to turn that attention into actual bookings. So I built the site I'd pitch to a client like him: one that looks professional, turns visitors into enquiries, shows up on Google, and — most importantly — that he could update himself anytime, without paying a developer for every small change.",
+      "Nafiis is a strength & mobility coach with a growing Instagram following, but no website to turn that attention into bookings. So I built the kind of site I'd want to make for a client like him: one that looks professional, helps turn visitors into enquiries, shows up on Google, and, most importantly, that he could update himself anytime, without paying a developer for every small change.",
     approach: [
-      "Studied his Instagram to capture his real voice and look — the faith-and-fitness angle that sets him apart — so the site feels unmistakably his.",
+      "Studied his Instagram to capture his real voice and look, including the faith-and-fitness angle that sets him apart, so the site feels unmistakably his.",
       "Designed every page around one goal: getting visitors to book. Clear headline, simple program options, real testimonials, an FAQ, and 'message on WhatsApp / book a call' buttons throughout.",
-      "Set it up so the owner can edit any part of the site himself — text, photos, prices, testimonials — through a simple editor, with a 'preview before it goes live' safety net.",
+      "Set it up so the owner can edit any part of the site himself (text, photos, prices, testimonials) through a simple editor, with a 'preview before it goes live' safety net.",
       "Built it to be found on Google: the technical SEO groundwork so the business can show up in search and look polished when shared on WhatsApp or Instagram.",
-      "Designed mobile-first, since that's where his audience is — so it looks sharp on a phone every time.",
+      "Designed mobile-first, since that's where his audience is, so it looks sharp on a phone every time.",
     ],
     outcome: [
-      "A professional marketing site equal to what a design agency sells — custom design, full owner control, and SEO — without the agency price.",
+      "A professional marketing site with the essentials a small business needs: custom design, full owner control, and SEO built in.",
       "The owner runs it himself: change wording, swap photos, add a testimonial, or reorder programs in minutes, no developer needed.",
-      "Built to be discovered — ready to rank on Google and to look great the moment someone shares the link.",
+      "Built to be discovered, with the SEO groundwork in place and a polished preview when someone shares the link.",
     ],
     highlights: [
-      "Edit every section yourself — no developer needed (Sanity CMS)",
+      "Edit every section yourself, no developer needed (Sanity CMS)",
       "Preview changes safely before they go live (draft → publish)",
       "Built so Google can find and feature the business (structured data)",
       "Looks polished when shared on WhatsApp & social (social cards)",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
         src: "/projects/nafiis-home.png",
         width: 1920,
         height: 9427,
-        caption: "The full site — built around one job: turning visitors into booked clients.",
+        caption: "The full site, built around one job: helping turn visitors into booked clients.",
       },
       {
         src: "/projects/nafiis-studio.png",
@@ -83,14 +83,14 @@ export const projects: Project[] = [
         src: "/projects/nafiis.png",
         width: 1200,
         height: 630,
-        caption: "How the site looks when shared on WhatsApp or social — polished, not a bare link.",
+        caption: "How the site looks when shared on WhatsApp or social: polished, not a bare link.",
       },
     ],
   },
   {
     title: "Math Arcade",
     description:
-      "An app that replaces a teacher's paper stamp chart — find any student's reward stamps in seconds, across every class and year level, instead of flipping through pages.",
+      "An app that replaces a teacher's paper stamp chart, so they can find any student's reward stamps in seconds, across every class and year level, instead of flipping through pages.",
     image: "/projects/math-arcade.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind", "Firebase"],
     liveUrl: "",
@@ -100,11 +100,11 @@ export const projects: Project[] = [
     year: "2026",
     role: "Design & full-stack development",
     tagline:
-      "Built for real teachers — turning the paper chore of tracking reward stamps into something you can search in seconds.",
+      "Built for real teachers, turning the paper chore of tracking reward stamps into something you can search in seconds.",
     problem:
       "Teachers give students reward stamps but track them on paper, so it's slow and frustrating to check who's earned what across different classes and year levels. They needed a simple, fast tool that makes finding and updating that information effortless.",
     approach: [
-      "Designed the whole app around the one thing teachers do most — quickly finding and updating a student's stamps.",
+      "Designed the whole app around the one thing teachers do most: quickly finding and updating a student's stamps.",
       "Made it searchable and filterable by class and year level, so the right student comes up in seconds instead of a page-flip.",
       "Built it to update instantly and stay fast to load, with secure sign-in for teachers (Firebase).",
     ],
@@ -115,21 +115,21 @@ export const projects: Project[] = [
     highlights: [
       "Find any student in seconds (search & filter by class and level)",
       "Updates instantly, with secure teacher sign-in (Firebase)",
-      "Simple enough for any teacher — no tech skills needed",
+      "Simple enough for any teacher, no tech skills needed",
     ],
     gallery: [
       {
         src: "/projects/math-arcade.png",
         width: 875,
         height: 742,
-        caption: "The teacher's dashboard — find and update any student's stamps in seconds.",
+        caption: "The teacher's dashboard: find and update any student's stamps in seconds.",
       },
     ],
   },
   {
     title: "Trainer Tracking App",
     description:
-      "Lets personal trainers log a client's progress once — and the client automatically gets a polished progress report by email, no extra work.",
+      "Lets personal trainers log a client's progress once, and the client automatically gets a polished progress report by email, no extra work.",
     image: "/projects/trainer.png",
     stack: ["React", "TypeScript", "Tailwind", "Lucide", "Resend"],
     liveUrl: "",
@@ -139,12 +139,12 @@ export const projects: Project[] = [
     year: "2026",
     role: "Design & full-stack development",
     tagline:
-      "Keeps trainers and clients connected — log progress once, and the client gets an automatic report by email.",
+      "Keeps trainers and clients connected: log progress once, and the client gets an automatic report by email.",
     problem:
       "Personal trainers keep client progress in scattered notes and rarely send clients a consistent update. The app needed to make logging progress quick and turn it into automatic, professional updates that keep clients engaged.",
     approach: [
       "Designed a quick logging flow so a trainer can record a client's progress in a few taps.",
-      "Set it up to email each client a clean progress report automatically — so updates happen without the trainer lifting a finger.",
+      "Set it up to email each client a clean progress report automatically, so updates happen without the trainer lifting a finger.",
       "Kept the app simple, fast, and easy to use on any device.",
     ],
     outcome: [
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         src: "/projects/trainer.png",
         width: 1920,
         height: 1107,
-        caption: "Where the trainer logs a client's progress — the email report sends itself.",
+        caption: "Where the trainer logs a client's progress, then the email report sends itself.",
       },
     ],
   },
@@ -177,7 +177,7 @@ export const projects: Project[] = [
   {
     title: "Tenzies",
     description:
-      "A fast-paced dice game where you lock in matching numbers to win — built as a React state-management exercise.",
+      "A fast-paced dice game where you lock in matching numbers to win, built as a React state-management exercise.",
     image: "/projects/tenzies.png",
     stack: ["HTML", "CSS", "React"],
     liveUrl: "https://tenzies-afif.netlify.app/",
@@ -186,7 +186,7 @@ export const projects: Project[] = [
   {
     title: "Hangman",
     description:
-      "A word-guessing game with a programming-language twist — guess letters before the language goes extinct.",
+      "A word-guessing game with a programming-language twist: guess letters before the language goes extinct.",
     image: "/projects/hangman.png",
     stack: ["HTML", "CSS", "React"],
     liveUrl: "https://hangman-afif.netlify.app/",

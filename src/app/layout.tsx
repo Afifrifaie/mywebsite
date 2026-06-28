@@ -18,9 +18,9 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://afifrifaie.netlify.app"),
-  title: "Afif Rifaie — Front End & AI Web Developer",
+  title: "Afif Rifaie · Front End & AI Web Developer",
   description:
-    "Afif Rifaie — Front End and AI Web Developer. I care about shipping useful things people genuinely love.",
+    "Afif Rifaie, Front End and AI Web Developer. I care about shipping useful things people genuinely love.",
 };
 
 export default function RootLayout({

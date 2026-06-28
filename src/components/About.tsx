@@ -49,7 +49,7 @@ export default function About() {
 
         {/* Currently building */}
         <article className="glow-card relative overflow-hidden rounded-2xl border border-border bg-surface p-6 lg:col-span-2">
-          {/* Background image — right half of image shown, on right side of card */}
+          {/* Background image: right half of image shown, on right side of card */}
           <div
             aria-hidden
             className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-cover bg-no-repeat opacity-70"
